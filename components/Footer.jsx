@@ -102,7 +102,7 @@ const Footer = () => {
             </p>
             <p>
               <Link href="#" className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
-                What's New
+                What is New
               </Link>
             </p>
             <p>

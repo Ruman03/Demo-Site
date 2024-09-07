@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
      
       <main>{children}</main>
       <Footer />
-      <script src="./node_modules/preline/dist/preline.js"></script>
+  
       </body>
     </html>
   );

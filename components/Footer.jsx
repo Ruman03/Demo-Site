@@ -62,7 +62,7 @@ const Footer = () => {
               <Link href="#" className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
                 Careers
               </Link>
-              <span className="inline text-blue-600">— We're hiring</span>
+              
             </p>
             <p>
               <Link href="#" className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
@@ -130,7 +130,7 @@ const Footer = () => {
               <Link href="#" className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
                 GitHub
               </Link>
-              <span className="inline text-blue-600">— New</span>
+        
             </p>
           </div>
 

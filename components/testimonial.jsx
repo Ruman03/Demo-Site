@@ -19,7 +19,7 @@ const Testimonial = () => {
                 <div className="lg:col-span-5 lg:col-start-1">
                     <div className="mb-8">
                         <h2 className="mb-2 text-3xl text-gray-800 font-bold lg:text-4xl">
-                            It's all about speed
+                            It is all about speed
                         </h2>
                         <p className="text-gray-600">
                             We provide you with a test account that can be set up in seconds. Our main focus is getting responses to you as soon as we can.

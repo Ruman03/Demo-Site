@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import Button from './button';
+import Image from 'next/image';
 
 
 const Hero = () => {
@@ -14,6 +15,7 @@ const Hero = () => {
         "Welcome to My Blog",
         "Explore Tech Articles",
         "Stay Updated with Latest Trends",
+        "Explore our Services",
       ],
       typeSpeed: 50,
       backSpeed: 25,
@@ -28,19 +30,42 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className='bg-gradient-1'>
-        <div className="flex flex-col justify-center items-center bg-dark-1 ">
-            <div className='mt-52 z-50'>
-            <h1 className="text-3xl text-center text-white font-bold md:text-5xl  lg:text-7xl">Empowering Digital Innovation
+    <section className='relative'>
+
+       
+
+          <Image
+          src='/image/bg1.svg'
+          alt='Background Image'
+          width='400'
+          height='400'
+          className='absolute right-0'
+          />
+
+          <Image
+          src='/image/bg.svg'
+          alt='Background Image'
+          width='400'
+          height='400'
+          className='absolute bottom-[-50px]'
+          />
+        
+
+        <div className=" flex flex-col justify-center items-center ">
+          
+            <div className='mt-32 mb-16 z-50'>
+            <h1 className="text-2xl text-center text-black font-bold md:text-5xl  lg:text-6xl">Empowering Digital Innovation
             </h1>
-            <h2 className='text-3xl text-center mt-2 font-bold md:text-5xl'><span ref={typedElement}></span></h2>
-            <p className='text-md text-center text-slate-300 px-16 my-4 md:px-3 md:text-xl'>Our team of expert developers and designers is dedicated to crafting custom applications that drive growth, streamline operations, and deliver exceptional user experiences. Let's build the future of technology together.</p>
-            <div className='flex flex-col gap-3 justify-center items-center mb-4 md:flex-row'>
+            <h2 className='text-xl text-center mt-2 font-bold md:text-4xl'><span ref={typedElement}></span></h2>
+            <p className='text-md text-center text-slate-900 px-6 my-7 md:px-3 md:text-xl xl:px-72'>Our team of expert developers and designers is dedicated to crafting custom applications that drive growth, streamline operations, and deliver exceptional user experiences. Let us build the future of technology together.</p>
+            <div className='flex flex-col gap-5 justify-center items-center md:flex-row'>
+              <Button
+              text={'Trending Articles'}
+              link={'/blog'}
+              />
                 <Button
-                text={'Latest Posts'}
-                />
-                <Button
-                text={'Trending Articles'}
+                text={'Services'}
+                link={'/services'}
                 />
             </div>
             
@@ -48,6 +73,7 @@ const Hero = () => {
             </div>
 
         </div>
+              
     </section>
   )
 }

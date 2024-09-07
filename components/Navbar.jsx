@@ -17,8 +17,8 @@ import Button from './button';
 
 const Navbar = () => {
   return (
-    <nav className="bg-gradient-1 ">
-        <div className="bg-dark-1 flex justify-between lg:justify-around items-center p-4 z-20 w-full bg-transparent">
+    <nav>
+        <div className="flex justify-between lg:justify-around items-center p-4 z-20 w-full bg-transparent">
 
         <div>
             <Link className='flex justify-center items-center gap-x-2' href='/'>
@@ -27,9 +27,9 @@ const Navbar = () => {
             alt='Ruman Tech Logo'
             width={24}
             height={24}
-            className='md:w-12 md:h-12 lg:w-8 lg:h-8 xl:w-12 xl:h-12'
+            className='md:w-12 md:h-12 lg:w-8 lg:h-8 xl:w-10 xl:h-10'
             />
-            <span className='text-2xl font-bold md:text-5xl lg:text-3xl xl:text-5xl'>Ruman Tech</span>
+            <span className='text-2xl font-bold md:text-5xl lg:text-3xl xl:text-4xl'>Ruman Tech</span>
             </Link>
         </div>
 
@@ -41,19 +41,28 @@ const Navbar = () => {
                 alt="Hamburger Icon"
                 width={32}
                 height={32}
+                className='invert'
                 />
              </SheetTrigger>
-                <SheetContent className='flex justify-center items-center bg-gray-800'>
-                    <div className='flex flex-col gap-y-8 justify-center items-center  container '>
-                    <Link className='text-2xl hover:bg-white hover:text-black hover:p-2 hover:rounded-lg' href='/'>Home</Link>
-                    <Link className='text-2xl hover:bg-white hover:text-black hover:p-2 hover:rounded-lg' href='/about'>About Us</Link>
-                    <Link className='text-2xl hover:bg-white hover:text-black hover:p-2 hover:rounded-lg' href='/blog'>Blog</Link>
-                    <Link className='text-2xl hover:bg-white hover:text-black hover:p-2 hover:rounded-lg' href='/projects'>Projects</Link>
-                    <Link className='text-2xl hover:bg-white hover:text-black hover:p-2 hover:rounded-lg' href='/services'>Services</Link>
+                <SheetContent className='flex bg-slate-100'>
+                    <div className='py-3 flex flex-col gap-y-[calc(2vh)] items-center container h-fit '>
+                    <Link className='text-2xl rounded font-bold hover:bg-blue-600 hover:text-white hover:p-2 hover:rounded-xl' href='/'>Home</Link>
+                    <div className='bg-slate-500 h-[1px] w-full'></div>
+                    <Link className='text-2xl rounded font-bold hover:bg-blue-600 hover:text-white hover:p-2 hover:rounded-xl' href='/about'>About Us</Link>
+                    <div className='bg-slate-500 h-[1px] w-full'></div>
+                    <Link className='text-2xl rounded font-bold hover:bg-blue-600 hover:text-white hover:p-2 hover:rounded-xl' href='/blog'>Blog</Link>
+                    <div className='bg-slate-500 h-[1px] w-full'></div>
+                    <Link className='text-2xl rounded font-bold hover:bg-blue-600 hover:text-white hover:p-2 hover:rounded-xl' href='/projects'>Projects</Link>
+                    <div className='bg-slate-500 h-[1px] w-full'></div>
+                    <Link className='text-2xl  font-bold hover:bg-blue-600 hover:text-white hover:p-2 
+                   hover:rounded-xl ' href='/services'>Services</Link>
+                    <div className='bg-slate-500 h-[1px] w-full'></div>
                     <Button
                     text='Contact Us'
+                    link={'/contact'}
                     />
                     </div>
+
              </SheetContent>
             </Sheet>
         </div>
@@ -65,6 +74,7 @@ const Navbar = () => {
         <div className='flex justify-center items-center max-lg:hidden'>
         <Button
         text='Contact Us'
+        link={'/contact'}
         />
         </div>
 

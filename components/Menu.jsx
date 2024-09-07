@@ -15,7 +15,7 @@ const Menu = () => {
             <NavigationMenuItem>
             <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <span className='text-2xl xl:text-3xl'>Home</span>
+                <span className='text-2xl xl:text-2xl'>Home</span>
                 </NavigationMenuLink>
             </Link>
             </NavigationMenuItem>
@@ -24,7 +24,7 @@ const Menu = () => {
             <NavigationMenuItem>
             <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <span className='text-2xl xl:text-3xl'>About</span>
+                <span className='text-2xl xl:text-2xl'>About</span>
                 </NavigationMenuLink>
             </Link>
             </NavigationMenuItem>
@@ -32,7 +32,7 @@ const Menu = () => {
             <NavigationMenuItem>
             <Link href="/blog" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <span className='text-2xl xl:text-3xl'>Blog</span>
+                <span className='text-2xl xl:text-2xl'>Blog</span>
                 </NavigationMenuLink>
             </Link>
             </NavigationMenuItem>
@@ -40,7 +40,7 @@ const Menu = () => {
             <NavigationMenuItem>
             <Link href="/projects" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <span className='text-2xl xl:text-3xl'>Projects</span>
+                <span className='text-2xl xl:text-2xl'>Projects</span>
                 </NavigationMenuLink>
             </Link>
             </NavigationMenuItem>
@@ -48,7 +48,7 @@ const Menu = () => {
             <NavigationMenuItem>
             <Link href="/services" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <span className='text-2xl xl:text-3xl'>Services</span>
+                <span className='text-2xl xl:text-2xl'>Services</span>
                 </NavigationMenuLink>
             </Link>
             </NavigationMenuItem>

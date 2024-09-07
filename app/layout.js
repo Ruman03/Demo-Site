@@ -18,6 +18,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "Ruman Tech",
   description: "A Tech Blog Site created by Ruman Asif",
+  icons:'./icons/logo.png',
 };
 
 export default function RootLayout({ children }) {
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
      
       <main>{children}</main>
       <Footer />
+      <script src="./node_modules/preline/dist/preline.js"></script>
       </body>
     </html>
   );

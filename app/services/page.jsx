@@ -1,8 +1,14 @@
+import Service from '@/components/service'
 import React from 'react'
+
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <section>
+       <div>
+      <Service />
+    </div>
+    </section>
   )
 }
 

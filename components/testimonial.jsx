@@ -36,7 +36,7 @@ const Testimonial = () => {
                         <footer className="mt-6">
                             <div className="flex items-center gap-x-4">
                                 <div className="shrink-0">
-                                    <Image className="size-8 rounded-full" src="/image/avatar.jpeg" alt="Avatar" width={36} height={36} />
+                                    <Image className="size-8 rounded-full" src="/image/avatar.jpeg" alt="Avatar" width={32} height={32} />
                                 </div>
                                 <div className="grow">
                                     <div className="font-semibold text-gray-800">Josh Grazioso</div>

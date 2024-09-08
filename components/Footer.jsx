@@ -1,4 +1,6 @@
 // Footer.js (Next.js compatible)
+/* eslint-disable react/no-unescaped-entities */
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -62,7 +64,11 @@ const Footer = () => {
               <Link href="#" className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
                 Careers
               </Link>
+<<<<<<< HEAD
             
+=======
+              
+>>>>>>> e2cbc8e0474a98c4d62c55d861e866726b270cdc
             </p>
             <p>
               <Link href="#" className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
@@ -102,7 +108,7 @@ const Footer = () => {
             </p>
             <p>
               <Link href="#" className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
-                What's New
+                What is New
               </Link>
             </p>
             <p>
@@ -130,7 +136,7 @@ const Footer = () => {
               <Link href="#" className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
                 GitHub
               </Link>
-              <span className="inline text-blue-600">— New</span>
+        
             </p>
           </div>
 

@@ -1,4 +1,4 @@
-import Service from '@/components/service'
+import Service from '@/components/Service'
 import React from 'react'
 
 
